@@ -1,0 +1,26 @@
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content">
+  <div class="">
+    <h1 class="modal-title fs-5 text-center mt-2" >Paylaş <button type="button" class="btn-close float-end" data-bs-dismiss="modal" ></button></h1>
+    <hr>
+  </div>
+    <div class="modal-body">
+    
+      <form method="post" action="{% url 'post:list' %}">
+        {% csrf_token %}
+        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" name="selected_username">
+            <option selected>Kime...</option>
+            {% for user in users %}
+                <option>{{ user.username }}</option>
+            {% endfor %}
+        </select>
+        <div class="d-grid gap-2 p-2 m-2 ">
+            <button type="submit" class="btn btn-primary" role="button">Gönder</button>
+        </div>
+    </form>
+
+  </div>
+  </div>
+</div>
+</div>

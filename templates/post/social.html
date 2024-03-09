@@ -1,0 +1,25 @@
+{% extends 'base/master.html' %}
+
+{% block container %}
+  <h2>Kullanıcılar</h2>
+
+  {% for user in users %}
+  <span>{{ user.username }}</span>
+    <form method="POST" action="{% url 'post:follow' %}">
+        {% csrf_token %}
+        <input type="hidden" name="user_id" value="{{ user.id }}">
+    
+        {% if not user.is_followed %}
+        
+            <button type="submit">Takip Et</button><hr>
+        {% else %}
+            <span>Takip Ediliyor</span>
+        
+            <button type="submit" name="unfollow">Takipten Çık</button><hr>
+        {% endif %}
+    </form>
+    
+  {% endfor %}
+  
+  <a href="{% url 'post:list' %}" class="btn btn-success ms-1">Ana Sayfa</a>
+{% endblock %}

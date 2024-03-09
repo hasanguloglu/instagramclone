@@ -1,0 +1,40 @@
+.finsta{
+    font-family: 'Rits Calltown', sans-serif;
+    font-size: 3em;
+    font-style: normal;
+}
+
+.fsm{
+      font-size: 12px;
+}
+
+.fsm-14{
+      font-size: 14px;
+}
+
+    
+::-webkit-input-placeholder {
+    font-size: 25px;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+       font-size: 25px;
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+       font-size: 25px;
+ }
+ 
+ /* Overriding styles */
+ 
+ ::-webkit-input-placeholder {
+    font-size: 13px!important;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+       font-size: 12px!important;
+ }
+ ::-moz-placeholder {  /* Firefox 19+ */
+       font-size: 12px!important;
+ }
+ 

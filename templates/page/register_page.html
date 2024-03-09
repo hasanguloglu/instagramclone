@@ -1,0 +1,52 @@
+{% extends 'base/master.html' %}
+{% load static%}
+
+{% block containerflex %}
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card mt-5" style="width: 20rem;" >
+            <div class="card-body">
+            <h5 class="card-title text-center mt-3 mb-3 finsta ">Instagram</h5>
+                <p class="text-center ms-3 me-3 text-secondary h6">Arkadaşlarının fotoğraf ve videolarını görmek için kaydol.</p>
+            <div class="d-grid gap-2 mb-3">
+                <button type="submit" class="btn btn-primary mt-2 mb-2"><a href="#" class="text-decoration-none text-light"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook me-2" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                    </svg>Facebook ile giriş yap</a></button>
+            </div>
+            <p class="text-center">⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯ YA DA ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</p> 
+            <form method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                <input type="email" class="form-control bg-light" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" value="{{email}}"
+            placeholder="E-posta">  
+                </div>
+                <div class="mb-3">
+                <input type="text" class="form-control bg-light" id="exampleInputPassword1"
+            placeholder="Adı Soyadı" name="full_name" value="{{full_name}}">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control bg-light" id="exampleInputPassword1" name="username" value="{{username}}" 
+                placeholder="Kullanıcı adı " >
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control bg-light" id="exampleInputPassword1" name="password"
+                    placeholder="Şifre">
+                        </div>
+                <p class="text-center ms-2 me-2 text-secondary fsm">Hizmetimizi kullanan kişiler senin iletişim bilgilerini Instagram'a yüklemiş olabilir. Daha Fazla Bilgi Al</p>
+                <p class="text-center ms-2 me-2 text-secondary fsm">Kaydolarak, Koşullarımızı, Gizlilik İlkemizi ve Çerezler İlkemizi kabul etmiş olursun.</p>
+                <div class="d-grid gap-2 mb-3">
+                <button type="submit" class="btn btn-primary">Kaydol</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        <div class="card mt-3" style="width: 20rem;" >
+            <div class="card-body">
+            <p class="text-center my-auto">Hesabın var mı? <a href="{% url 'login' %}" class="text-decoration-none text-primary">Giriş yap</a></p>
+            </div>
+            </div>
+        {% include 'components/card.html' %}
+    
+    </div>
+</div>
+{% endblock containerflex %}

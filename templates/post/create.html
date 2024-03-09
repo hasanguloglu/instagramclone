@@ -1,0 +1,11 @@
+{% extends 'base/master.html' %}
+
+{% block container %}
+  <h2>Create a New Post</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create Post</button>
+  </form>
+  <a href="{% url 'post:list' %}">Cancel</a>
+{% endblock %}

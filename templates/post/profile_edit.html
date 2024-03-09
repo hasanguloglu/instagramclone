@@ -1,0 +1,8 @@
+<!-- profile.html -->
+
+<img src="{{ user.profile_image.url }}" alt="{{ user.username }}'s Profile Image">
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Profile Image</button>
+</form>
