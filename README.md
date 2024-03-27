@@ -1,65 +1,65 @@
 # INSTAGRAM CLONE - DJANGO
 
-Bu proje instagramın klonlanmasını içerir. 
+This project involves cloning Instagram.
 
-## Özellikler
+## Features
 
-1. **Hesap Oluşturma ve Giriş Yapma:**
-   - Kullanıcılar hesap oluşturabilir ve giriş yapabilir.
+1. **Account Creation and Login:**
+   - Users can create accounts and log in.
+<img width="595" alt="login" src="https://github.com/hasanguloglu/instagramclone/assets/131296667/6777d988-1c6f-4bd9-8225-4c7aedbd5453">
 
-2. **Post Atma ve Anasayfa/Profil Entegrasyonu:**
-   - Kullanıcılar postlarını paylaşabilir, tag ve açıklama yazabilir.
-   - Paylaşılan postlar anasayfa ve kullanıcının profilinde görüntülenir.
+2. **Posting and Integration with Homepage/Profile:**
+   - Users can share posts, add tags, and descriptions.
+   - Shared posts are displayed on the homepage and the user's profile. 
+<img width="450" alt="home" src="https://github.com/hasanguloglu/instagramclone/assets/131296667/0baaa32f-b2cf-4764-8407-c4acb6809c60">
+<img width="500" alt="profil" src="https://github.com/hasanguloglu/instagramclone/assets/131296667/6cf3a4c7-0411-476a-9b09-ac7921ade8ef">
 
-3. **Yorum ve Beğeni Sistemi:**
-   - Kullanıcılar postlara yorum yapabilir ve beğenebilir.
+3. **Comment and Like System:**
+   - Users can comment on posts and like them.
+<img width="374" alt="comment" src="https://github.com/hasanguloglu/instagramclone/assets/131296667/55cdcc1d-1178-42dc-87d3-6edafe0464d1">
 
-4. **Keşfet Sayfası:**
-   - Keşfet sayfasında en çok beğenilen postları görebilirsiniz.
+4. **Explore Page:**
+   - The explore page shows the most liked posts.
 
-5. **Profil Görüntüleme ve Takip Etme:**
-   - Kullanıcılar kendi profil bilgilerini görebilir ve düzenleyebilir(*geliştirme aşamasında*).
-   - Takip etme sistemi ile kullanıcılar diğer kullanıcıları takip edebilir veya takipten çıkabilir.
+5. **Profile Viewing and Following:**
+   - Users can view and edit their profile information (*under development*).
+   - With the follow system, users can follow or unfollow other users.
 
-6. **Anasayfada Takip Edilenlerin Postlarını Görme:**
-   - Anasayfa, kullanıcının takip ettiği kişilerin ve kendisinin postlarını gösterir.
+## Technologies Used
 
+- ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+- ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)
+- ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 
-## Kullanılan Teknolojiler
+## Installation
 
-- Python
-- Django
-- HTML, CSS
-- Bootstrap
+- Django module must be installed for the project to work. See: https://pypi.org/project/Django/ for pre-installation.
 
-## Kurulum
+- To explore the project, on terminal ; \
+```python manage.py runserver```
 
-- Projenin çalışabilmesi için djano modülünün yüklü olması gerekir. Ön yükleme için bknz: https://pypi.org/project/Django/
+## Usage
 
-- Terminali açtıktan sonra python manage.py runserver ile projeyi başlatabilirsiniz.
+- After logging in, pages except Reels and Notifications in the left menu on the homepage work. The Messages section is under development.
 
-## Kullanım
+## Future Features
 
-- Giriş yaptıktan sonra açılan anasayfadaki sol menüde Reels ve Bildirimler hariç diğer sayfalar çalışmakta, Mesaj kısmı ise geliştirilmektedir.
+Features and improvements planned for future versions of the project:
 
+1. **Adding or Changing Profile Picture:**
+   - Users can add or change their profile picture.
 
-## Geliştirilecek Özellikler
+2. **Navigating to User Profile:**
+   - Users can click on the username of a post owner to navigate to the user's profile page for more information.
 
-Projenin gelecekteki sürümlerinde eklenmesi planlanan özellikler ve iyileştirmeler:
+3. **Direct Messaging:**
+   - Users can send direct messages to each other.
 
-1. **Profil Fotoğrafı Ekleme veya Değiştirme:**
-   - Kullanıcılar profil fotoğrafı ekleyebilecek veya değiştirebilecek.
+4. **Viewing Users Who Liked a Post:**
+   - Users can view other users who liked a specific post.
 
-2. **Kullanıcı Profiline Gitme:**
-   - Kullanıcılar post sahibinin adına tıklayarak kullanıcının profil sayfasına giderek daha fazla bilgiye erişebilecek.
+5. **Deleting and Editing Posts and Comments:**
+   - Users can delete their posts and edit or delete their comments.
 
-3. **Doğrudan Mesaj Gönderme:**
-   - Kullanıcılar birbirlerine doğrudan mesaj gönderebilecek.
-
-4. **Beğeni Alan Kullanıcıları Görme:**
-   - Kullanıcılar belirli bir postu beğenen diğer kullanıcıları görüntüleyebilecek.
-
-5. **Postu ve Yorumları Silme, Düzenleme:**
-   - Kullanıcılar attıkları postu silebilir, yazdıkları yorumları da silebilir veya değiştirebilir hale gelecek.
-
-Bu özellikler ve iyileştirmeler, kullanıcı deneyimini zenginleştirmek ve projeyi daha işlevsel hale getirecektir.
+These features and improvements will enhance user experience and make the project more functional.
